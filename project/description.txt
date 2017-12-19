@@ -1,0 +1,17 @@
+I have collected the followers of 3 Tech CEO: Satya Nadela, ,Sundar Pichai and Tim Cook to form a network. The idea is to see how common followers they have. The Collect.py runs almost ~7-9 mins approx.
+to collect the followers of each CEO ( sample size limited to 5000 per player) and tweets of the subset of followers(250)(10 tweets per follower).The number of tweets retrieved
+is also limited to avoid rate limitation and longer period of data collection.
+
+Cluster.py runs the Girvan Newman algorithm on the graph created among the common user whom they follow and their friends (to avoid clutter and dense graph). The original graph
+created is saved to network.png. It could be noted that they are common friends of all CEOs. The users are clustered, based on whether they are really following
+
+Classify.py - Downloaded the AFINN dataset for the analysis of raw data (tweets) whether the tweets about the users is positive, negative or mixed.
+Tokenized the tweets into tokens and score the tokens on the basis of AFINN dataset.
+If the tweet contains more score of positive words than negative words then the tweet belongs to the positive class.
+If the tweet contains more score of negative words than positive words then the tweet belongs to the negative class.
+And if the score of positive and negative words are equal then the tweet belongs to the mixed class.
+
+Summarize.py -Collected the information using the results got from collect.py, cluster.py and classify.py
+
+Conclusion: From the implementation of the Assignment I have learnt that how many people are following the top tech giants. and also
+Most of the tweets belong to mixed class or positive class, from which its difficult to say that the tweet is negative or positive.
