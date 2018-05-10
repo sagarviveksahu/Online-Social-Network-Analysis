@@ -38,10 +38,10 @@ import time
 from TwitterAPI import TwitterAPI
 import warnings
 
-consumer_key = 'YvGXrXQtjZFd5U70NHp8MHx6s'
-consumer_secret = 'RDNfM3LO48GdHE7bfzMfokaDBxYwpNSf8nm3wKNXc4aJtXKE1l'
-access_token = '1303069056-A0iUJIr3qJMFX7YjBP4KsLv6XbNmMENyrXWxNls'
-access_token_secret = 'ml8xAvco7tEsoAUd1AHKYREBG14S5G6pL3U0NiCYIJpP2'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 
 # This method is done for you.
@@ -51,10 +51,10 @@ def get_twitter():
       An instance of TwitterAPI.
     """
 
-    consumer_key = 'YvGXrXQtjZFd5U70NHp8MHx6s'
-    consumer_secret = 'RDNfM3LO48GdHE7bfzMfokaDBxYwpNSf8nm3wKNXc4aJtXKE1l'
-    access_token = '1303069056-A0iUJIr3qJMFX7YjBP4KsLv6XbNmMENyrXWxNls'
-    access_token_secret = 'ml8xAvco7tEsoAUd1AHKYREBG14S5G6pL3U0NiCYIJpP2'
+    consumer_key = ''
+    consumer_secret = ''
+    access_token = ''
+    access_token_secret = ''
 
     return TwitterAPI(consumer_key, consumer_secret, access_token, access_token_secret)
 
